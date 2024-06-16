@@ -1,22 +1,59 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["My pleasure", "You're Welcome"],
-         "context": [""]
-        },
-        {"tag": "query",
-         "patterns": ["What is Simplilearn?"],
-         "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform "],
-         "context": [""]
-        } 
-    ]}
+{
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": ["Hola", "¿Cómo estás?", "¿Hay alguien ahí?", "Hey", "Buenos días", "Buenas tardes"],
+        "responses": ["Hola", "Qué bueno verte de nuevo", "Hola, ¿cómo puedo ayudarte?"],
+        "context": [""]
+      },
+      {
+        "tag": "despedida",
+        "patterns": ["Adiós", "Hasta luego", "Nos vemos", "Fue un placer hablar contigo, adiós", "Hasta la próxima"],
+        "responses": ["¡Nos vemos!", "Que tengas un buen día", "¡Adiós! Vuelve pronto."],
+        "context": [""]
+      },
+      {
+        "tag": "agradecimiento",
+        "patterns": ["Gracias", "Muchas gracias", "Eso fue útil", "Genial, gracias", "Gracias por ayudarme"],
+        "responses": ["Un placer", "De nada"],
+        "context": [""]
+      },
+      {
+        "tag": "psicología",
+        "patterns": ["¿Qué es la salud mental?", "Háblame sobre la salud mental", "Consejos para mantener una buena salud mental", "¿Qué es la depresión?", "Síntomas de la ansiedad"],
+        "responses": ["La salud mental se refiere al bienestar emocional, psicológico y social. Afecta cómo pensamos, sentimos y actuamos.", "Es importante cuidar la salud mental practicando actividades como el ejercicio, la meditación y manteniendo relaciones positivas.", "La depresión es un trastorno del estado de ánimo que causa una sensación persistente de tristeza y pérdida de interés.", "La ansiedad puede incluir síntomas como nerviosismo, aumento del ritmo cardíaco y dificultad para concentrarse."],
+        "context": [""]
+      },
+      {
+        "tag": "matemáticas",
+        "patterns": ["¿Qué es una ecuación?", "Explícame el teorema de Pitágoras", "¿Cómo se calcula el área de un círculo?", "Define integral", "¿Qué es una derivada?", "¿Cuánto es 5 más 3?", "¿Qué es 10 menos 4?", "Multiplica 6 por 7"],
+        "responses": ["Una ecuación es una igualdad matemática que contiene una o más incógnitas.", "El teorema de Pitágoras establece que en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos.", "El área de un círculo se calcula con la fórmula A = πr², donde r es el radio del círculo.", "Una integral es una función que da el área bajo la curva de una función dada.", "Una derivada representa la tasa de cambio de una función con respecto a una de sus variables.", "5 más 3 es 8.", "10 menos 4 es 6.", "6 por 7 es 42."],
+        "context": [""]
+      },
+      {
+        "tag": "dinero",
+        "patterns": ["Consejos para ahorrar dinero", "¿Qué es una inversión?", "¿Cómo funciona el interés compuesto?", "Diferencia entre tarjeta de crédito y débito", "¿Qué es el mercado de valores?"],
+        "responses": ["Para ahorrar dinero, es útil crear un presupuesto, reducir gastos innecesarios y establecer objetivos de ahorro.", "Una inversión es la acción de dedicar dinero a un proyecto o compra con la esperanza de obtener un beneficio.", "El interés compuesto es el interés sobre el capital inicial y también sobre el interés acumulado de periodos anteriores.", "Una tarjeta de crédito permite pedir prestado dinero hasta un límite, mientras que una tarjeta de débito utiliza el dinero directamente de tu cuenta bancaria.", "El mercado de valores es un mercado donde se compran y venden acciones de empresas."],
+        "context": [""]
+      },
+      {
+        "tag": "emociones",
+        "patterns": ["¿Qué son las emociones?", "Tipos de emociones", "¿Cómo manejar el estrés?", "Consejos para mejorar el estado de ánimo", "¿Qué es la inteligencia emocional?"],
+        "responses": ["Las emociones son reacciones psicológicas y fisiológicas ante diferentes situaciones.", "Las emociones pueden ser positivas como la alegría, o negativas como la tristeza y el miedo.", "Para manejar el estrés, es útil practicar la relajación, hacer ejercicio regularmente y hablar con alguien de confianza.", "Para mejorar el estado de ánimo, intenta hacer actividades que disfrutes, mantener una dieta saludable y dormir lo suficiente.", "La inteligencia emocional es la capacidad de reconocer, entender y manejar nuestras propias emociones y las de los demás."],
+        "context": [""]
+      },
+      {
+        "tag": "historia",
+        "patterns": ["¿Quién fue Napoleón?", "Háblame de la Revolución Francesa", "Causas de la Segunda Guerra Mundial", "¿Qué fue la Guerra Fría?", "Eventos importantes de la historia de México"],
+        "responses": ["Napoleón Bonaparte fue un líder militar y emperador francés que dominó gran parte de Europa en el siglo XIX.", "La Revolución Francesa fue un período de cambios radicales en Francia entre 1789 y 1799 que llevó al fin de la monarquía y al ascenso de Napoleón.", "Las causas de la Segunda Guerra Mundial incluyen el Tratado de Versalles, la expansión nazi y la invasión de Polonia.", "La Guerra Fría fue un período de tensión política y militar entre Estados Unidos y la Unión Soviética después de la Segunda Guerra Mundial.", "Algunos eventos importantes de la historia de México incluyen la independencia de 1810, la Revolución Mexicana de 1910 y la promulgación de la Constitución de 1917."],
+        "context": [""]
+      },
+      {
+        "tag": "trivia",
+        "patterns": ["Dime un dato curioso", "¿Cuál es el animal más rápido del mundo?", "¿Quién inventó la bombilla?", "Capital de Francia", "¿Qué es la fotosíntesis?"],
+        "responses": ["¿Sabías que el corazón de un camarón está en su cabeza?", "El animal más rápido del mundo es el halcón peregrino, que puede alcanzar velocidades de más de 300 km/h.", "La bombilla fue inventada por Thomas Edison en 1879.", "La capital de Francia es París.", "La fotosíntesis es el proceso mediante el cual las plantas convierten la luz solar en energía química."],
+        "context": [""]
+      }
+    ]
+  }
+  
