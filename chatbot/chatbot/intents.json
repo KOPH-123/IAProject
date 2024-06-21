@@ -53,7 +53,123 @@
         "patterns": ["Dime un dato curioso", "¿Cuál es el animal más rápido del mundo?", "¿Quién inventó la bombilla?", "Capital de Francia", "¿Qué es la fotosíntesis?"],
         "responses": ["¿Sabías que el corazón de un camarón está en su cabeza?", "El animal más rápido del mundo es el halcón peregrino, que puede alcanzar velocidades de más de 300 km/h.", "La bombilla fue inventada por Thomas Edison en 1879.", "La capital de Francia es París.", "La fotosíntesis es el proceso mediante el cual las plantas convierten la luz solar en energía química."],
         "context": [""]
-      }
+      },
+      {
+        "tag": "google",
+        "patterns": [
+            "google",
+            "buscar",
+            "internet"
+        ],
+        "responses": [
+            "Redirigiendo a Google..."
+        ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+          "¿Cómo puedes ayudarme?",
+          "¿Qué puedes hacer?",
+          "¿Qué ayuda ofreces?",
+          "¿Cómo puedes ser útil?",
+          "¿Qué soporte se ofrece?"
+      ],
+      "responses": [
+          "Soy un chatbot de propósito general. Mis capacidades son: \n 1. Puedo chatear contigo. ¡Intenta pedirme chistes o acertijos! \n 2. Pregúntame la fecha y la hora \n 3. Puedo buscar en Google por ti. Usa el formato google: tu consulta \n 4. Puedo decirte el clima actual de cualquier ciudad. Usa el formato clima: nombre de la ciudad \n 5. Puedo darte las 10 noticias más populares en India. Usa las palabras clave 'Últimas noticias' \n 6. Puedo darte las 10 canciones más populares a nivel mundial. Escribe 'canciones' \n 7. Puedo configurar un temporizador para ti. Escribe 'configura un temporizador: minutos para el temporizador' \n 8. Puedo darte las estadísticas actuales de Covid-19 de cualquier país. Usa 'covid 19: mundo' o 'covid 19: nombre del país' \n Para sugerencias para ayudarme a mejorar, envía un correo a ted.thedlbot.suggestions@gmail.com. ¡Gracias!"
+      ],
+      "context": [
+          ""
+      ]
+  },
+  {
+    "tag": "Identity",
+    "patterns": [
+        "¿Quién eres?",
+        "¿qué eres?"
+    ],
+    "responses": [
+        "Soy Ted, un chatbot de Deep-Learning"
+    ]
+},
+{
+    "tag": "datetime",
+    "patterns": [
+        "¿Qué hora es?",
+        "¿qué fecha es?",
+        "fecha",
+        "hora",
+        "dime la fecha","día","¿qué día es hoy?"
+    ],
+    "responses": [
+        "Fecha y hora"
+    ]
+},
+{
+  "tag": "weather",
+  "patterns": [
+      "temperatura",
+      "clima",
+      "¿qué calor hace?",
+      "cual es el clima?",
+      "dime el clima"
+  ],
+  "responses": [
+      "..."
+  ]
+},
+{
+  "tag": "nicetty",
+  "patterns": [
+      "fue agradable hablar contigo",
+      "buena charla"
+  ],
+  "responses": [
+      "¡Fue agradable hablar contigo también! ¡Vuelve pronto!"
+  ]
+},
+{
+  "tag": "no",
+  "patterns": [
+      "no",
+      "nope"
+  ],
+  "responses": [
+      "ok"
+  ]
+},
+{
+  "tag": "news",
+  "patterns": [
+      "noticias",
+      "últimas noticias",
+      "noticias de india"
+  ],
+  "responses": [
+      "..."
+  ]
+},
+{
+  "tag": "inspire",
+  "patterns": [
+      "¿quién te inspira?",
+      "¿quién es tu inspiración?",
+      "¿quién te motiva?"
+  ],
+  "responses": [
+      "Personalmente, encuentro a Albert Einstein muy inspirador. Aunque tal vez no sea muy justo.."
+  ]
+},
+{
+  "tag": "creators",
+  "patterns": [
+      "¿quién te programo?",
+      "¿quién te hizo?",
+      "¿cuales son tus creadores?"
+  ],
+  "responses": [
+      "Mis creadores son : Handel Sanchez y Kevin Peinado"
+  ]
+}
     ]
   }
   
